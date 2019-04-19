@@ -9,7 +9,7 @@ def read_config():
 
     # get params from config file
     print('[INFO] Reading config file...')
-    with open('./config.json') as config_file:
+    with open('/home/pi/Laboratory/iot-dht22/config.json') as config_file:
         return json.load(config_file)
 
 def probe_sensor(cfg):
