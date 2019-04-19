@@ -1,4 +1,4 @@
 {
-    "dbFileName": "temp_hum.sql",
+    "dbFileName": "/home/pi/Laboratory/iot-dht22/temp_hum.sql",
     "gpioPin": 4
 }
