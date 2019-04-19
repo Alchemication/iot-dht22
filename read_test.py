@@ -1,10 +1,9 @@
 #!/usr/bin/python3
 import sqlite3
 import json
+from probe import read_config
 
-print('[INFO] Reading config file...')
-with open('./config.json') as config_file:
-    cfg = json.load(config_file)
+cfg = read_config()
 
 print('[INFO] Connecting to DB...')
 conn = sqlite3.connect(cfg['dbFileName'])
@@ -18,5 +17,3 @@ for r in res:
 
 conn.commit()
 conn.close()
-print('[INFO] DONE')
-    

@@ -1,3 +1,4 @@
 {
-    "dbFileName": "temp_hum.sql"
+    "dbFileName": "temp_hum.sql",
+    "gpioPin": 4
 }
